@@ -1,0 +1,23 @@
+#FROM ubuntu:latest
+#LABEL authors="Gabriela Visani"
+#
+#ENTRYPOINT ["top", "-b"]
+version: "3"
+services:
+  InfoGreves_db:
+    image: postgres:10
+    volumes:
+      - db-data:/var/lib/postgresql/data1
+      - ./start_script/startup.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_PASSWORD: greve
+      POSTGRES_USER: sa
+      POSTGRES_DB: InfoGreves
+    ports:
+      - "5433:5432"
+
+    restart: always
+
+volumes:
+  db-data:
+    driver: local

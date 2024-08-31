@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="init_create_table_greve" author="gabriela">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="greve" />
+            </not>
+        </preConditions>
+
+        <createTable tableName="greve">
+            <column name="id_greve" type="VARCHAR(255)" >
+                <constraints primaryKey="true" nullable="false"  />
+            </column>
+            <column name="data_inicio" type="DATE">
+            </column>
+            <column name="data_fim" type="DATE"/>
+            <column name="motivo" type="VARCHAR(255)"/>
+            <column name="categoria" type="VARCHAR(100)"/>
+            <column name="sindicato_responsavel" type="VARCHAR(255)"/>
+            <column name="numero_trabalhadores" type="INT"/>
+            <column name="local" type="VARCHAR(255)"/>
+            <column name="greve_teve_sucesso" type="BOOLEAN"/>
+            <column name="resolucao_acordo" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,41 @@
+server:
+  servlet:
+    context-path: /
+  port: 9080
+  compression:
+    mime-types:
+      - application/json
+
+spring:
+  application:
+    name: InfoGreves
+  main:
+    allow-bean-definition-overriding: true
+
+  ## Enabling database connection
+  datasource:
+    url: jdbc:postgresql://localhost:5433/InfoGreves
+    username: sa
+    password: greve
+  jpa:
+    open-in-view: false
+    show-sql: true
+    format-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 50
+
+  ## Enable liquidbase
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/changelog-local.xml
+
+
+
+
+
