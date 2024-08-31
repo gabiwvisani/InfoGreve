@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+}
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+body {
+  background-color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  color: #002855;
+}
+.navb {
+  background-color:#00337F;
+
+}
+.navl {
+  margin-left: 50px !important;
+  color:#FFFFFF !important;
+}
+#basic-navbar-nav{
+ /* padding-left: 20px;*/
+  color:#FFFFFF;
+}
+Nav.Link{
+  color:#FFFFFF;
+}
+p{
+  font-family: "Bliss Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  text-align: left;
+  color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bliss Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #002855;
+  margin-left: 5% !important;
+  margin-top: 2% !important;
+}
+ul {
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+
+ul li {
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none!important;
+  background-color: #E6E6E6;
+  margin:20px !important;;
+  border-radius: 5px;
+  font-family: "Bliss Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 0.975em;
+    text-align: left;
+    line-height: 150%;
+    color: #777777;
+}
+label{
+  font-family: "Bliss Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.975em;
+  margin-left:15px !important;
+  text-align: left;
+  line-height: 150%;
+  color: #777777;
+}
+input{
+  font-family: "Bliss Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.975em;
+  margin-left:10px !important;
+  margin-right:15px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  text-align: left;
+  line-height: 100%;
+  border-radius: 7px solid #002855;
+  color: #777777;
+  width: 30%;
+}
+
+button {
+  font-size: 12px;
+  border-radius: 10px !important; 
+  margin-left: 10px !important;
+  margin-right: 10px;
+  margin-bottom: 5px!important;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (min-width: 900px) {
+  .logo {
+      background-image: url(https://www.dieese.org.br/imagens/logo-dieese-2021.png);
+      width: 500px;
+      height: 80px;
+      background-repeat: no-repeat;
+  }
+  
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
