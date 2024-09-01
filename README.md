@@ -52,6 +52,6 @@ bash
 npm install
 
 ### Como rodar o projeto
-Com o docker já instalado, rodar o docker compose que está dentro do backend.
-Depois rodar a aplicação java.
-Depois rodar o front-end (no visual code ou no terminal que estiver usando rodar npm start)
+Com o docker já instalado, rodar o docker-compose que está dentro do backend.
+Depois, rodar a aplicação java.
+Em seguida, rodar o front-end (npm start).
